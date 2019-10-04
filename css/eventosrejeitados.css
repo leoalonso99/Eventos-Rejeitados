@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --red: #ff2b34;
+    --black: #222;
+    --white: #fff;
+    --texto: 'Open Sans', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+#topo {
+    background: var(--red);
+    width: 100%;
+    height: 17vh;
+}
+
+.menu {
+    justify-content: space-around;
+    height: 17vh;
+    align-items: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    font-size: 1.3em;
+    margin-top: 1em;
+}
+
+.menu li {
+    text-transform: uppercase;
+}
+
+.menu a {
+    padding: 0 1vw;
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--texto)
+}
+
+.logo {
+    width: 100%;
+    margin-top: 1em;
+    padding-right: 60em;
+}
+
+.icon {
+    display: none;
+}
+
+.teste:hover {
+    background: var(--black);
+    color: var(--white);
+}
+
+.botao {
+    background: var(--black);
+    border-radius: 0.75em;
+    padding: 2vh;
+    width: 12vw;
+}
+
+.botao li {
+    margin-top: -1em;
+}
+
+.menu .teste {
+    padding: 2vh 1vw;
+}
+
+
+/* fim da nav */
+
+
+/* main{
+    width: 100%;
+    height: 100vh;
+} */
+
+
+/* título "Eventos Rejeitados*/
+
+.cardseventosrejeitados-mudarposicao h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    text-transform: uppercase;
+    font-family: var(--texto);
+}
+
+
+/* fim do título */
+
+
+/* edição do h2 */
+
+.cardseventosrejeitados-mudarposicao h2 {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-top: 3em;
+    font-family: var(--texto);
+}
+
+
+/* fim edição h2 */
+
+
+/* div pai */
+
+.cardseventosrejeitados-mudarposicao {
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* fim div pai */
+
+
+/* div pai dos cards de cima */
+
+.cardseventosrejeitados-partedecima {
+    width: 90vw;
+    height: 60vh;
+    margin-bottom: 1em;
+    justify-content: space-around;
+}
+
+
+/* fim div pai cards de cima */
+
+
+/* divs do primeiro pai*/
+
+.cardseventosrejeitados-primeirocard {
+    width: 20vw;
+    height: 60vh;
+    background-color: #fafdff;
+    border-radius: 1em;
+    box-shadow: 0.1em 0.1em 0.05em #222
+}
+
+.cardseventosrejeitados-segundocard {
+    width: 20vw;
+    height: 60vh;
+    background-color: #fafdff;
+    border-radius: 1em;
+    box-shadow: 0.1em 0.1em 0.05em #222
+}
+
+.cardseventosrejeitados-terceirocard {
+    width: 20vw;
+    height: 60vh;
+    background-color: #fafdff;
+    border-radius: 1em;
+    box-shadow: 0.1em 0.1em 0.05em #222
+}
+
+
+/* fim divs do primeiro pai*/
+
+
+/* div pai dos cards de baixo */
+
+.cardseventosrejeitados-partedebaixo {
+    width: 90vw;
+    height: 80vh;
+    margin-top: 1em;
+    margin-bottom: 5em;
+    /* background-color: orangered; */
+    justify-content: space-around;
+}
+
+
+/* fim div pai dos cards de baixo */
+
+
+/* divs do segundo pai */
+
+.cardseventosrejeitados-quartocard {
+    width: 20vw;
+    height: 60vh;
+    background-color: #fafdff;
+    border-radius: 1em;
+    box-shadow: 0.1em 0.1em 0.05em #222
+}
+
+.cardseventosrejeitados-quintocard {
+    width: 20vw;
+    height: 60vh;
+    background-color: #fafdff;
+    border-radius: 1em;
+    box-shadow: 0.1em 0.1em 0.05em #222
+}
+
+.cardseventosrejeitados-sextocard {
+    width: 20vw;
+    height: 60vh;
+    background-color: #fafdff;
+    border-radius: 1em;
+    box-shadow: 0.1em 0.1em 0.05em #222
+}
+
+.cardseventosrejeitados-setimocard {
+    width: 20vw;
+    height: 60vh;
+    background-color: #fafdff;
+    border-radius: 1em;
+    box-shadow: 0.1em 0.1em 0.05em #222
+}
+
+.cardseventosrejeitados-oitavocard {
+    width: 20vw;
+    height: 60vh;
+    background-color: #fafdff;
+    border-radius: 1em;
+    box-shadow: 0.1em 0.1em 0.05em #222
+}
+
+
+/* fim divs do segundo pai */
+
+
+/* edição das imagens nas divs */
+
+.imagemcard {
+    width: 20vw;
+    height: 30vh;
+    border-radius: 1em;
+}
+
+
+/* fim edição das imagens nas divs */
+
+
+/* essa é a parte dos buttons */
+
+.button {
+    display: inline-block;
+    border-radius: 0.5em;
+    background-color: var(--red);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 0.75em;
+    width: 10vw;
+    transition: all 0.5s;
+    cursor: pointer;
+    /* margin: 5px; */
+    margin-top: 3em;
+    margin-left: 4.5em;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+@media screen and (max-width: 376px) {
+    nav.menu {
+        width: 100vw;
+    }
+}

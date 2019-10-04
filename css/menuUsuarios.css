@@ -1,0 +1,121 @@
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+ 
+ :root {
+     --red: #ff2b34;
+     --black: #222;
+     --white: #fff;
+     --texto: 'Open Sans', sans-serif;
+ }
+ 
+ a,
+ p {
+     font-family: var(--texto)
+ }
+ 
+ h1,
+ h2,
+ h3,
+ h4,
+ h5 {
+     font-family: var(--texto);
+ }
+ 
+ #topo_mobile_home {
+     width: 100%;
+     height: 12vh;
+     background: #ff2b34
+ }
+ 
+ #check {
+     display: none;
+ }
+ 
+ #icone {
+     cursor: pointer;
+     position: absolute;
+     z-index: 1;
+     margin-left: 0.5em;
+     margin-top: 1.7em
+ }
+ 
+ #topo_mobile_home {
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     /* margin-left: 0.5em */
+ }
+ 
+ #topo_mobile_home h2 {
+     margin-right: 0.5em;
+     color: #fff
+ }
+ 
+ .fa-bars {
+     display: block;
+     font-size: 2em;
+     color: var(--white)
+ }
+ 
+ .barra {
+     background-color: var(--black);
+     height: 100%;
+     width: 300px;
+     position: absolute;
+     transition: all .2s linear;
+     left: -300px;
+     /* right: -80%; */
+ }
+ 
+ .barra nav {
+     width: 100%;
+     position: absolute;
+     top: 60px;
+ }
+ 
+ .barra nav a {
+     text-decoration: none;
+ }
+ 
+ .link {
+     /* background-color: var(--red); */
+     padding: 20px;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 12pt;
+     transition: all .2s linear;
+     color: #fff;
+     /* border-bottom: 2px solid #B83339; */
+ }
+ 
+ .link:hover {
+     background-color: #fff;
+     color: var(--black);
+ }
+ 
+ #check:checked~.barra {
+     transform: translateX(300px);
+ }
+ 
+ @media screen and (max-width: 769px) {
+     .barra {
+         width: 35%
+     }
+     #icone {
+         margin-top: 1.5em;
+         margin-left: 0.5em
+     }
+ }
+ 
+ @media screen and (max-width: 376px) {
+     .barra {
+         width: 80%;
+     }
+     #icone {
+         margin-top: 1.5em;
+         margin-left: 0.5em
+     }
+ }
